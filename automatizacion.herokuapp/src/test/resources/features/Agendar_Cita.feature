@@ -24,26 +24,26 @@ Feature: Agendar Cita Medico
   @CasoExitoso
   Scenario Outline: Agendar una cita medica de forma exitosa
     Given que ingreso de forma exitosa a la pagina
-    |nombre_doctor|apellido_doctor	|telefono_doctor	|tipdoc_doctor	|numdoc_doctor	|nombre_paciente	|apellido_paciente	|telefono_paciente	|tipdoc_paciente	|numdoc_paciente	|saludprepagada	|dia_cita	|numdoc_doctor_cita	|numdoc_paciente_cita	|observaciones_cita	|resultado_esperado	|
-    |<nombre_doctor>	|<apellido_doctor>	|<telefono_doctor>	|<tipdoc_doctor>	|<numdoc_doctor>	|<nombre_paciente>	|<apellido_paciente>	|<telefono_paciente>	|<tipdoc_paciente>	|<numdoc_paciente>	|<saludprepagada>	|<dia_cita>	|<numdoc_doctor_cita>	|<numdoc_paciente_cita>	|<observaciones_cita>	|<resultado_esperado>|
+    |nombredoctor|apellidodoctor	|telefonodoctor	|tipdocdoctor	|numdocdoctor	|nombrepaciente	|apellidopaciente	|telefonopaciente	|tipdocpaciente	|numdocpaciente	|saludprepagada	|diacita	|numdocdoctorcita	|numdocpacientecita	|observacionescita	|resultadoesperado	|
+    |<nombredoctor>	|<apellidodoctor>	|<telefonodoctor>	|<tipdocdoctor>	|<numdocdoctor>	|<nombrepaciente>	|<apellidopaciente>	|<telefonopaciente>	|<tipdocpaciente>	|<numdocpaciente>	|<saludprepagada>	|<diacita>	|<numdocdoctorcita>	|<numdocpacientecita>	|<observacionescita>	|<resultadoesperado>|
     And que creo previamente al Medico
     And que creo previamente al Paciente 
     When agendo una cita con los siguientes Datos
     Then verifico que obtengo el mensaje esperado
     
     Examples:
-    |nombre_doctor|apellido_doctor	|telefono_doctor	|tipdoc_doctor	|numdoc_doctor	|nombre_paciente	|apellido_paciente	|telefono_paciente	|tipdoc_paciente	|numdoc_paciente	|saludprepagada	|dia_cita	|numdoc_doctor_cita	|numdoc_paciente_cita	|observaciones_cita	|resultado_esperado	|
+    |nombredoctor|apellidodoctor	|telefonodoctor	|tipdocdoctor	|numdocdoctor	|nombrepaciente	|apellidopaciente	|telefonopaciente	|tipdocpaciente	|numdocpaciente	|saludprepagada	|diacita	|numdocdoctorcita	|numdocpacientecita	|observacionescita	|resultadoesperado	|
 	|Alan	|Brito	|4444040	|Pasaportes	|102002	|Juan	|Chito	|2222020	|Cédula de ciudadanía	|102102	|S	|06/13/2018	|102002	|102102	|Esta es una cita BLAB BLAAFA GASGASGAG	|Datos guardados correctamente.	|
 	
   @CasoFallido
   Scenario Outline: Agendar una cita medica sin medico y paciente inscritos.
     Given que ingreso de forma exitosa a la pagina
-    |nombre_doctor|apellido_doctor	|telefono_doctor	|tipdoc_doctor	|numdoc_doctor	|nombre_paciente	|apellido_paciente	|telefono_paciente	|tipdoc_paciente	|numdoc_paciente	|saludprepagada	|dia_cita	|numdoc_doctor_cita	|numdoc_paciente_cita	|observaciones_cita	|resultado_esperado	|
-    |<nombre_doctor>	|<apellido_doctor>	|<telefono_doctor>	|<tipdoc_doctor>	|<numdoc_doctor>	|<nombre_paciente>	|<apellido_paciente>	|<telefono_paciente>	|<tipdoc_paciente>	|<numdoc_paciente>	|<saludprepagada>	|<dia_cita>	|<numdoc_doctor_cita>	|<numdoc_paciente_cita>	|<observaciones_cita>	|<resultado_esperado>|
+    |nombredoctor|apellidodoctor	|telefonodoctor	|tipdocdoctor	|numdocdoctor	|nombrepaciente	|apellidopaciente	|telefonopaciente	|tipdocpaciente	|numdocpaciente	|saludprepagada	|diacita	|numdocdoctorcita	|numdocpacientecita	|observacionescita	|resultadoesperado	|
+    |<nombredoctor>	|<apellidodoctor>	|<telefonodoctor>	|<tipdocdoctor>	|<numdocdoctor>	|<nombrepaciente>	|<apellidopaciente>	|<telefonopaciente>	|<tipdocpaciente>	|<numdocpaciente>	|<saludprepagada>	|<diacita>	|<numdocdoctorcita>	|<numdocpacientecita>	|<observacionescita>	|<resultadoesperado>|
     When agendo una cita con los siguientes Datos
     Then verifico que obtengo el mensaje esperado
     
     Examples:
-    |nombre_doctor|apellido_doctor	|telefono_doctor	|tipdoc_doctor	|numdoc_doctor	|nombre_paciente	|apellido_paciente	|telefono_paciente	|tipdoc_paciente	|numdoc_paciente	|saludprepagada	|dia_cita	|numdoc_doctor_cita	|numdoc_paciente_cita	|observaciones_cita	|resultado_esperado	|
+    |nombredoctor|apellidodoctor	|telefonodoctor	|tipdocdoctor	|numdocdoctor	|nombrepaciente	|apellidopaciente	|telefonopaciente	|tipdocpaciente	|numdocpaciente	|saludprepagada	|diacita	|numdocdoctorcita	|numdocpacientecita	|observacionescita	|resultadoesperado	|
 	|Alan	|Brito	|4444040	|Pasaportes	|102002	|Juan	|Chito	|2222020	|Cédula de ciudadanía	|102102	|S	|06/13/2018	|122002	|122102	|Esta es una cita BLAB BLAAFA GASGASGAG	|No se pudo guardar debido a:	|
 	

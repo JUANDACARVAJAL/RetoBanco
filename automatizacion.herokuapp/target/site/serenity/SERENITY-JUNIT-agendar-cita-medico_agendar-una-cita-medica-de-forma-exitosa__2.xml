@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Agendar Cita Medico" skipped="0" tests="2" time="30.22" timestamp="2018-06-20T11:06:28.797-05:00[America/Bogota]"><testcase name="Agendar una cita medica de forma exitosa"/><testcase name="Agendar una cita medica sin medico y paciente inscritos."/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="Agendar Cita Medico" skipped="0" tests="2" time="83.56" timestamp="2018-06-20T17:11:33.452-05:00[America/Bogota]"><testcase name="Agendar una cita medica de forma exitosa"><error message="Could not instantiate class org.openqa.selenium.ie.InternetExplorerDriver" type="net.thucydides.core.webdriver.UnsupportedDriverException">Could not instantiate class org.openqa.selenium.ie.InternetExplorerDriver</error><system-err>Could not instantiate class org.openqa.selenium.ie.InternetExplorerDriver&#13;
+automatizacion.herokuapp.steps.AgendarCitasSteps.ingresarpagina(AgendarCitasSteps.java:17)&#13;
+automatizacion.herokuapp.definitions.AgendarCitasDefinition.queIngresoDeFormaExitosaALaPagina(AgendarCitasDefinition.java:29)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+</system-err></testcase><testcase name="Agendar una cita medica sin medico y paciente inscritos."><error message="Could not instantiate class org.openqa.selenium.ie.InternetExplorerDriver" type="net.thucydides.core.webdriver.UnsupportedDriverException">Could not instantiate class org.openqa.selenium.ie.InternetExplorerDriver</error><system-err>Could not instantiate class org.openqa.selenium.ie.InternetExplorerDriver&#13;
+automatizacion.herokuapp.steps.AgendarCitasSteps.ingresarpagina(AgendarCitasSteps.java:17)&#13;
+automatizacion.herokuapp.definitions.AgendarCitasDefinition.queIngresoDeFormaExitosaALaPagina(AgendarCitasDefinition.java:29)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
+</system-err></testcase></testsuite>
