@@ -76,14 +76,8 @@
         <li >
             <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
-        <li >
-            <a href="requirement_type_theme.html"><i class="fa fa-comments-o"></i> Themes</a>
-        </li>
-        <li >
-            <a href="requirement_type_capability.html"><i class="fa fa-comments-o"></i> Capabilities</a>
-        </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-06-2018 18:52</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-06-2018 17:11</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -131,9 +125,9 @@ a traves del portal automatizacion.herokuapp.com
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-square-o pending-icon fa-3x' title='PENDING'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-3x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                    <span class="pending-color">
+                                    <span class="error-color">
                                     Agendar Una Cita Medica De Forma Exitosa
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -150,7 +144,7 @@ a traves del portal automatizacion.herokuapp.com
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario">Given que ingreso de forma exitosa a la pagina<br>And que creo previamente al Medico<br><table class='embedded'><thead><th>&lt;nombre_doctor&gt;</th><th>&lt;apellido_doctor&gt;</th><th>&lt;telefono_doctor&gt;</th><th>&lt;tipdoc_doctor&gt;</th><th>&lt;numdoc_doctor&gt;</th></thead><tbody></tbody></table><br>And que creo previamente al Paciente<br><table class='embedded'><thead><th>&lt;nombre_paciente&gt;</th><th>&lt;apellido_paciente&gt;</th><th>&lt;telefono_paciente&gt;</th><th>&lt;tipdoc_paciente&gt;</th><th>&lt;numdoc_paciente&gt;</th><th>&lt;saludprepagada&gt;</th></thead><tbody></tbody></table><br>When agendo una cita con los siguientes Datos<br><table class='embedded'><thead><th>&lt;dia_cita&gt;</th><th>&lt;numdoc_doctor_cita&gt;</th><th>&lt;numdoc_paciente_cita&gt;</th><th>&lt;observaciones_cita&gt;</th></thead><tbody></tbody></table><br>Then verifico que obtengo el mensaje exitoso Datos guardados correctamente<br><table class='embedded'><thead><th>&lt;resultado_esperado&gt;</th></thead><tbody></tbody></table><br></div>
+        <div class="scenario">Given que ingreso de forma exitosa a la pagina<br><table class='embedded'><thead><th>nombredoctor</th><th>apellidodoctor</th><th>telefonodoctor</th><th>tipdocdoctor</th><th>numdocdoctor</th><th>nombrepaciente</th><th>apellidopaciente</th><th>telefonopaciente</th><th>tipdocpaciente</th><th>numdocpaciente</th><th>saludprepagada</th><th>diacita</th><th>numdocdoctorcita</th><th>numdocpacientecita</th><th>observacionescita</th><th>resultadoesperado</th></thead><tbody><tr><td>&lt;nombredoctor&gt;</td><td>&lt;apellidodoctor&gt;</td><td>&lt;telefonodoctor&gt;</td><td>&lt;tipdocdoctor&gt;</td><td>&lt;numdocdoctor&gt;</td><td>&lt;nombrepaciente&gt;</td><td>&lt;apellidopaciente&gt;</td><td>&lt;telefonopaciente&gt;</td><td>&lt;tipdocpaciente&gt;</td><td>&lt;numdocpaciente&gt;</td><td>&lt;saludprepagada&gt;</td><td>&lt;diacita&gt;</td><td>&lt;numdocdoctorcita&gt;</td><td>&lt;numdocpacientecita&gt;</td><td>&lt;observacionescita&gt;</td><td>&lt;resultadoesperado&gt;</td></tr></tbody></table><br>And que creo previamente al Medico<br>And que creo previamente al Paciente<br>When agendo una cita con los siguientes Datos<br>Then verifico que obtengo el mensaje esperado<br></div>
 
     </div>
 
@@ -164,58 +158,58 @@ a traves del portal automatizacion.herokuapp.com
                 <thead>
                 <tr>
                     <th>#</th>
-                        <th>Nombre Doctor</th>
-                        <th>Apellido Doctor</th>
-                        <th>Telefono Doctor</th>
-                        <th>Tipdoc Doctor</th>
-                        <th>Numdoc Doctor</th>
-                        <th>Nombre Paciente</th>
-                        <th>Apellido Paciente</th>
-                        <th>Telefono Paciente</th>
-                        <th>Tipdoc Paciente</th>
-                        <th>Numdoc Paciente</th>
+                        <th>Nombredoctor</th>
+                        <th>Apellidodoctor</th>
+                        <th>Telefonodoctor</th>
+                        <th>Tipdocdoctor</th>
+                        <th>Numdocdoctor</th>
+                        <th>Nombrepaciente</th>
+                        <th>Apellidopaciente</th>
+                        <th>Telefonopaciente</th>
+                        <th>Tipdocpaciente</th>
+                        <th>Numdocpaciente</th>
                         <th>Saludprepagada</th>
-                        <th>Dia Cita</th>
-                        <th>Numdoc Doctor Cita</th>
-                        <th>Numdoc Paciente Cita</th>
-                        <th>Observaciones Cita</th>
-                        <th>Resultado Esperado</th>
+                        <th>Diacita</th>
+                        <th>Numdocdoctorcita</th>
+                        <th>Numdocpacientecita</th>
+                        <th>Observacionescita</th>
+                        <th>Resultadoesperado</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-PENDING"><a href="#0">1</a></td>
-                            <td class="test-PENDING"><a href="#0">Alan</a>
+                        <td class="test-ERROR"><a href="#0">1</a></td>
+                            <td class="test-ERROR"><a href="#0">Alan</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">Brito</a>
+                            <td class="test-ERROR"><a href="#0">Brito</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">4444040</a>
+                            <td class="test-ERROR"><a href="#0">4444040</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">C&eacute;dula de ciudadan&iacute;a</a>
+                            <td class="test-ERROR"><a href="#0">Pasaportes</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">102001</a>
+                            <td class="test-ERROR"><a href="#0">102002</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">Juan</a>
+                            <td class="test-ERROR"><a href="#0">Juan</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">Chito</a>
+                            <td class="test-ERROR"><a href="#0">Chito</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">2222020</a>
+                            <td class="test-ERROR"><a href="#0">2222020</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">C&eacute;dula de ciudadan&iacute;a</a>
+                            <td class="test-ERROR"><a href="#0">C&eacute;dula de ciudadan&iacute;a</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">102101</a>
+                            <td class="test-ERROR"><a href="#0">102102</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">S</a>
+                            <td class="test-ERROR"><a href="#0">S</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">06/13/2018</a>
+                            <td class="test-ERROR"><a href="#0">06/13/2018</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">102001</a>
+                            <td class="test-ERROR"><a href="#0">102002</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">102101</a>
+                            <td class="test-ERROR"><a href="#0">102102</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">Esta es una cita</a>
+                            <td class="test-ERROR"><a href="#0">Esta es una cita BLAB BLAAFA GASGASGAG</a>
                             </td>
-                            <td class="test-PENDING"><a href="#0">Cita Agendado Exitosamente</a>
+                            <td class="test-ERROR"><a href="#0">Datos guardados correctamente.</a>
                             </td>
                     </tr>
                 </tbody>
@@ -238,12 +232,12 @@ a traves del portal automatizacion.herokuapp.com
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-PENDING">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 pending-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 error-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -251,101 +245,193 @@ a traves del portal automatizacion.herokuapp.com
                         <div class="step-description">
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
-                            <span class="top-level-step">Agendar una cita medica de forma exitosa #1: {nombre_doctor=Alan, apellido_doctor=Brito, telefono_doctor=4444040, tipdoc_doctor=Cédula de ciudadanía, numdoc_doctor=102001, nombre_paciente=Juan, apellido_paciente=Chito, telefono_paciente=2222020, tipdoc_paciente=Cédula de ciudadanía, numdoc_paciente=102101, saludprepagada=S, dia_cita=06/13/2018, numdoc_doctor_cita=102001, numdoc_paciente_cita=102101, observaciones_cita=Esta es una cita, resultado_esperado=Cita Agendado Exitosamente}</span>
+                            <span class="top-level-step">Agendar una cita medica de forma exitosa #1: {nombredoctor=Alan, apellidodoctor=Brito, telefonodoctor=4444040, tipdocdoctor=Pasaportes, numdocdoctor=102002, nombrepaciente=Juan, apellidopaciente=Chito, telefonopaciente=2222020, tipdocpaciente=Cédula de ciudadanía, numdocpaciente=102102, saludprepagada=S, diacita=06/13/2018, numdocdoctorcita=102002, numdocpacientecita=102102, observacionescita=Esta es una cita BLAB BLAAFA GASGASGAG, resultadoesperado=Datos guardados correctamente.}</span>
                             </a>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">PENDING</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">41.25s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection0" style="display:none; width:100%">
 
-                <tr class="test-PENDING">
+                <tr class="test-ERROR">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                                  class="nested-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Given que ingreso de forma exitosa a la pagina</span>
+                            <span class="nested-step">Given que ingreso de forma exitosa a la pagina<br><table class='embedded'><thead><th>nombredoctor</th><th>apellidodoctor</th><th>telefonodoctor</th><th>tipdocdoctor</th><th>numdocdoctor</th><th>nombrepaciente</th><th>apellidopaciente</th><th>telefonopaciente</th><th>tipdocpaciente</th><th>numdocpaciente</th><th>saludprepagada</th><th>diacita</th><th>numdocdoctorcita</th><th>numdocpacientecita</th><th>observacionescita</th><th>resultadoesperado</th></thead><tbody><tr><td>Alan</td><td>Brito</td><td>4444040</td><td>Pasaportes</td><td>102002</td><td>Juan</td><td>Chito</td><td>2222020</td><td>Cédula de ciudadanía</td><td>102102</td><td>S</td><td>06/13/2018</td><td>102002</td><td>102102</td><td>Esta es una cita BLAB BLAAFA GASGASGAG</td><td>Datos guardados correctamente.</td></tr></tbody></table></span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
+                    <td width="100"><span class="nested-step">ERROR</span></td>
+                    <td width="100"><span class="nested-step">41.22s</span></td>
+                </tr>
+                <tr class="test-ERROR">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Ingresarpagina: [automatizacion.herokuapp.model.DatosTrabajo@68ba310d]</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">ERROR</span></td>
+                    <td width="100"><span class="nested-group-step">0.01s</span></td>
+                </tr>
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+                            <div class="error-message ellipsis"
+                                 title='Unsupported driver exception: Could not instantiate class org.openqa.selenium.ie.InternetExplorerDriver'>
+                                <pre>Unsupported driver exception: Could not instantiate class org.openqa.selenium.ie.InternetExplorerDriver</pre>
+                            </div>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                            data-target="#stacktraceModal-3">
+                        View stack trace
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal-3" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                net.thucydides.core.webdriver.UnsupportedDriverException
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <h5>Could not instantiate class org.openqa.selenium.ie.InternetExplorerDriver</h5>
+                                automatizacion.herokuapp.steps.AgendarCitasSteps.ingresarpagina(AgendarCitasSteps.java
+                                    :17) <br>
+                                automatizacion.herokuapp.definitions.AgendarCitasDefinition.queIngresoDeFormaExitosaALaPagina(AgendarCitasDefinition.java
+                                    :29) <br>
+                                org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java
+                                    :86) <br>
+                                org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java
+                                    :38) <br>
+                                org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
+                                    :538) <br>
+                                org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
+                                    :760) <br>
+                                org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java
+                                    :460) <br>
+                                org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java
+                                    :206) <br>
+                            </div>
+
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close"><span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title" id="stacktraceModalLabel">
+                                    Caused by: net.thucydides.core.webdriver.UnsupportedDriverException
+                                    </h4>
+                                </div>
+                                <div class="modal-body">
+                                        <h5>Could not instantiate new WebDriver instance of type class org.openqa.selenium.ie.InternetExplorerDriver (Timed out waiting for driver server to start.<br>Build info: version: '3.5.2', revision: '10229a9', time: '2017-08-21T17:29:55.15Z'<br>System info: host: 'CHCPMED9H5Q12', ip: '10.25.6.185', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'<br>Driver info: driver.version: InternetExplorerDriver</h5>
+                                        automatizacion.herokuapp.steps.AgendarCitasSteps.ingresarpagina(AgendarCitasSteps.java :17) <br>
+                                        automatizacion.herokuapp.definitions.AgendarCitasDefinition.queIngresoDeFormaExitosaALaPagina(AgendarCitasDefinition.java :29) <br>
+                                        org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :86) <br>
+                                        org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :38) <br>
+                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :538) <br>
+                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :760) <br>
+                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :460) <br>
+                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :206) <br>
+                                </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        </td>
+                    </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And que creo previamente al Medico</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.01s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">And que creo previamente al Paciente</span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-PENDING">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And que creo previamente al Medico<br><table class='embedded'><thead><th>Alan</th><th>Brito</th><th>4444040</th><th>Cédula de ciudadanía</th><th>102001</th></thead><tbody></tbody></table></span>
+                            <span class="nested-group-step">When agendo una cita con los siguientes Datos</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
-                <tr class="test-PENDING">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And que creo previamente al Paciente<br><table class='embedded'><thead><th>Juan</th><th>Chito</th><th>2222020</th><th>Cédula de ciudadanía</th><th>102101</th><th>S</th></thead><tbody></tbody></table></span>
+                            <span class="nested-group-step">Then verifico que obtengo el mensaje esperado</span>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-PENDING">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">When agendo una cita con los siguientes Datos<br><table class='embedded'><thead><th>06/13/2018</th><th>102001</th><th>102101</th><th>Esta es una cita</th></thead><tbody></tbody></table></span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
-                    <td width="100"><span class="nested-group-step">0s</span></td>
-                </tr>
-                <tr class="test-PENDING">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">Then verifico que obtengo el mensaje exitoso Datos guardados correctamente<br><table class='embedded'><thead><th>Cita Agendado Exitosamente</th></thead><tbody></tbody></table></span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">PENDING</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
                     <td width="100"><span class="nested-group-step">0s</span></td>
                 </tr>
 
                     </table>
                     </td>
                     <tr>
-                <tr class="test-PENDING">
+                <tr class="test-ERROR">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>PENDING</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.12s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>41.38s</em></span></td>
                 </tr>
 
             </table>
