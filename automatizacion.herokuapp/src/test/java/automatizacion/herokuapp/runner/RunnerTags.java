@@ -8,7 +8,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features="src/test/resources/features/Agendar_Cita.feature",
-snippets = SnippetType.CAMELCASE)
+snippets = SnippetType.CAMELCASE,glue="automatizacion.herokuapp.definitions")
 public class RunnerTags {
 
 }
