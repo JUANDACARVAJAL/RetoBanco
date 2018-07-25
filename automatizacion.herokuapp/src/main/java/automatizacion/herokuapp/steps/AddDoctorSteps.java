@@ -5,10 +5,9 @@ import automatizacion.herokuapp.pageobjects.PersonaDoctorPage;
 import net.serenitybdd.core.Serenity;
 
 public class AddDoctorSteps extends AccionarMenuSteps{
-	
-	PersonaDoctorPage personasdoctorpage;
 	DatosTrabajo datos;
-
+	PersonaDoctorPage personasdoctorpage;
+	
 	public void agregardoctor() {
 		datos = Serenity.sessionVariableCalled("valorestabla");
 		menudoctor();

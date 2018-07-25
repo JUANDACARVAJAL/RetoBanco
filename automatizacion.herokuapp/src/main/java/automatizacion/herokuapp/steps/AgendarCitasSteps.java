@@ -1,6 +1,7 @@
 package automatizacion.herokuapp.steps;
 
 import static org.junit.Assert.assertTrue;
+
 import java.util.List;
 
 import automatizacion.herokuapp.model.DatosTrabajo;
